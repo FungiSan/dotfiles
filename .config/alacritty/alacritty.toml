@@ -1,0 +1,24 @@
+[window]
+dynamic_title = false
+padding.x = 10
+padding.y = 10
+
+[font]
+normal.family = "Monospace CascadiaCode Propo"
+#normal.family = "CascadiaCode"
+normal.style = "Bold"
+size = 16
+
+[cursor]
+# style.shape = "Beam"
+style.shape = "Underline"
+style.blinking = "On"
+
+[selection]
+save_to_clipboard = true
+
+[general]
+import = [
+  "~/.config/alacritty/theme.toml",
+  "~/.config/alacritty/binds.toml"
+]

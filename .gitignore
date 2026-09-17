@@ -1,0 +1,8 @@
+**/__pycache__/
+test
+dest
+*.log
+**/cache/
+
+/.local/state
+
