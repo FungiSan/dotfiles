@@ -194,11 +194,4 @@ return {
       },
     },
   },
-
-  {
-    "pteroctopus/faster.nvim",
-    opts = function()
-      return require("faster").setup()
-    end,
-  }
 }

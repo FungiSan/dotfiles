@@ -100,7 +100,6 @@ hl.window_rule({
 	},
 
 	monitor = "0",
-	workspace = "3",
 	float = true,
 	size = "700 700",
 	move = "1200 200",
