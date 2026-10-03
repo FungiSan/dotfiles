@@ -6,6 +6,12 @@
 --
 -- https://wiki.hypr.land/Configuring/Basics/Window-Rules/
 
+hl.config({
+	general = {
+		resize_on_border = true,
+	}
+})
+
 hl.window_rule({
 	match = {
 		class = ".*",
@@ -69,6 +75,18 @@ hl.window_rule({
 })
 
 hl.window_rule({
+	name = "steam settings",
+	match = {
+		class = "steam",
+		title = "Steam Settings",
+	},
+
+	float = true,
+	move = "center center",
+	size = "400 700",
+})
+
+hl.window_rule({
 	match = {
 		class = "org.telegram.desktop",
 		title = "^Telegram.*",
@@ -93,6 +111,15 @@ hl.window_rule({
 	size = "500 680",
 	move = "center center",
 })
+
+hl.window_rule({
+	match = {
+		class = "mpv",
+	},
+
+	--float = true,
+})
+
 
 hl.window_rule({
 	match = {
@@ -223,6 +250,24 @@ hl.window_rule({
 	no_initial_focus = true,
 	focus_on_activate = true,
 	keep_aspect_ratio = true,
+})
+
+hl.window_rule({
+	name = "tor leaks",
+	match = {
+		class = "Tor Browser",
+		title = "Extension: (NoScript).*",
+	},
+	float = true,
+})
+
+hl.window_rule({
+	name = "tor opening",
+	match = {
+		class = "Tor Browser",
+		title = "Opening.*",
+	},
+	float = true,
 })
 
 hl.window_rule({

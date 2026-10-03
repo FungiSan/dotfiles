@@ -3,7 +3,6 @@
         "orientation": "horizontal",
         "modules" : [
             "hyprland/workspaces", 
-            "custom/arrow-right",
             "mpris"
         ]
     },

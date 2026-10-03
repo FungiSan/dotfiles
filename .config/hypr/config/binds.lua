@@ -12,7 +12,8 @@ local rofi_scripts = "~/.config/rofi/bin/"
 local terminal     = "alacritty"
 local file_manager = "dolphin"
 local code         = "alacritty -e nvim"
-local browser      = "chromium --ozone-platform=wayland"
+-- local browser      = "chromium --ozone-platform=wayland"
+local browser      = "zen-browser"
 
 -- Amount of workspaces used, no more than 10
 local workspaces   = 5

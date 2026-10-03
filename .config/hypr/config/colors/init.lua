@@ -1,1 +1,1 @@
-colors.dark.lua
+colors.light.lua

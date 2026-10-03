@@ -103,7 +103,7 @@ hl.config({
 
     input = {
         follow_mouse = 2,
-        sensitivity = -0.2,
+        sensitivity = -0.6,
         numlock_by_default = true,
 
 	kb_layout = "us,ru",

@@ -35,8 +35,8 @@ hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 hl.env("GBM_BACKEND", "nvidia-drm")
 
 -- Vulkan and nvidia related things
-hl.env("VKD3D_FILTER_DEVICE_NAME", "NVIDIA") -- Force nvidia for VKD3D
-hl.env("VK_ICD_FILENAMES", "/usr/share/vulkan/icd.d/nouveau_icd.json") -- Vulkan was unable to find my nvidia card, this one fixed it
+-- hl.env("VKD3D_FILTER_DEVICE_NAME", "NVIDIA") -- Force nvidia for VKD3D
+-- hl.env("VK_ICD_FILENAMES", "/usr/share/vulkan/icd.d/nouveau_icd.json") -- Vulkan was unable to find my nvidia card, this one fixed it
 
 -- User queue suppor for amd mesa dirvers.
 -- https://www.phoronix.com/news/Mesa-25.0-AMDGPU-User-Queue
