@@ -3,8 +3,8 @@
 cd $HOME/.config/alacritty/
 
 if [[ "$1" == "dark" ]]; then
-    ln -fs theme.dark.toml theme.toml
+    ln -fs themes/themes/afterglow.toml theme.toml
 else
-    ln -fs theme.light.toml theme.toml
+    ln -fs themes/themes/ashes_light.toml theme.toml
 fi
 

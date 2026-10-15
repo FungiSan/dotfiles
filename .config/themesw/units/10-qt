@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#exit 1
+
+# TODO: change theme
+
+#QT_DIR="$HOME/.config/qt6ct"
+
+if [[ "$1" == "dark" ]]; then
+  QT_THEME_NAME="catppuccin-mocha-blue"
+else
+  QT_THEME_NAME="catppuccin-latte-blue"
+fi
+
+kvantummanager --set "$QT_THEME_NAME"
