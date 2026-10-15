@@ -1,0 +1,9 @@
+require("config.monitors")
+require("config.env")
+require("config.startup")
+require("config.binds")
+require("config.options")
+-- require("config.gestures")
+require("config.rules")
+require("config.animations")
+
