@@ -3,6 +3,8 @@
 # A shortcut script for nwg-dock-hyprland, it has too much options
 # and changing some option is a pain, you'll have to replace it in too many places
 
+exit 0
+
 if [[ "$MANGO_INSTANCE_SIGNATURE" ]]; then
   DOCK="dock-mango"
 else
@@ -10,8 +12,7 @@ else
 fi
 
 $DOCK \
-  -p left \
-  -d -w 5 -ml 5 \
+  -p bottom \
+  -d \
   -l top -hl bottom \
-  -i 38 \
   -c "$HOME/.local/bin/toggle_rofi $HOME/.config/rofi/bin/drun --alternative" $@

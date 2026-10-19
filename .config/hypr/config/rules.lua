@@ -9,7 +9,7 @@
 hl.config({
 	general = {
 		resize_on_border = true,
-	}
+	},
 })
 
 hl.window_rule({
@@ -119,7 +119,6 @@ hl.window_rule({
 
 	--float = true,
 })
-
 
 hl.window_rule({
 	match = {
