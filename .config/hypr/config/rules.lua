@@ -66,7 +66,7 @@ hl.window_rule({
 	name = "steam friends list",
 	match = {
 		class = "steam",
-		title = "Friends List",
+		title = "Friends List|Список друзей",
 	},
 
 	float = true,
@@ -78,12 +78,12 @@ hl.window_rule({
 	name = "steam settings",
 	match = {
 		class = "steam",
-		title = "Steam Settings",
+		title = "Steam Settings|Настройки",
 	},
 
 	float = true,
 	move = "center center",
-	size = "400 700",
+	--size = "400 700",
 })
 
 hl.window_rule({
