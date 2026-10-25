@@ -13,8 +13,8 @@ local startup = {
 	"hyprctl setcursor Bibata-Modern-Ice 24", -- Set cursor theme for hyprland
 
 	-- Light theme
-	'gsettings set org.gnome.desktop.interface color-scheme "prefer-light"', 
-	'~/.local/bin/themesw light',
+	'gsettings set org.gnome.desktop.interface color-scheme "prefer-light"',
+	"~/.local/bin/themesw light",
 
 	"wl-clip-persist --clipboard regular", -- Enables clipboard persistence
 	"wl-paste --type text --watch cliphist -max-items=35 store", -- Enable clipboard for text
@@ -28,6 +28,7 @@ local startup = {
 	"flameshot",
 	"/usr/lib/xfce-polkit/xfce-polkit", -- Policy manager (prompts for sudo access if app requests)
 	"hypridle", -- "Idle daemon"
+	"mpris-proxy", -- mpris gateway for mpd
 }
 
 hl.on("hyprland.start", function()

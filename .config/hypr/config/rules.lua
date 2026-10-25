@@ -230,7 +230,7 @@ hl.window_rule({
 		class = "Alacritty|peaclock",
 	},
 
-	opacity = "0.95 0.9",
+	opacity = "0.98 0.9",
 	border_size = 2,
 })
 
