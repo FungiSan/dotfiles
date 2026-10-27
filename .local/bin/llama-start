@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir -p "$HOME/AI/models"
+
+llama serve \
+  --models-preset "$HOME/AI/models.ini" \
+  --port 8080
