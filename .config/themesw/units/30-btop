@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd $HOME/.config/btop/ || exit
+
+DARK_THEME="/usr/share/btop/themes/horizon.theme"
+LIGHT_THEME="/usr/share/btop/themes/flat-remix-light.theme"
+
+if [[ "$1" == "dark" ]]; then
+  THEME="$DARK_THEME"
+else
+  THEME="$LIGHT_THEME"
+fi
+
+sed -i "s|^\(color_theme = \).*|\1$THEME|" btop.conf
