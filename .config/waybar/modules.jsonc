@@ -2,7 +2,7 @@
     "group/left" : {
         "orientation": "horizontal",
         "modules" : [
-            "hyprland/workspaces", 
+            "hyprland/workspaces",
             "mpris"
         ]
     },
@@ -33,21 +33,10 @@
         "orientation": "horizontal",
         "modules" : [
             "group/group-volume",
-	    "bluetooth", 
-	    "group/group-backlight",
-	    "tray"
+	          "bluetooth",
+	          "group/group-backlight",
+	          "tray"
         ]
-    },
-
-    "group/right-hidden" : {
-        "orientation": "horizontal",
-        "modules" : [
-        ]
-    },
-
-    "group/right-hidden-top" : {
-        "orientation": "horizontal",
-        "modules" : [ "group/right-hidden",  "custom/ctlcenter" ]
     },
 
     "hyprland/workspaces": {
@@ -64,7 +53,7 @@
 
     "mango/workspaces": {
         "format": "{icon}",
-            
+
         "format-icons": {
             "active": "󰮯",
             "default": "",
@@ -241,42 +230,14 @@
         "on-click": "~/.config/rofi/bin/drun &"
     },
 
-    "custom/ctlcenter" : {
-        "tooltip" : false,
-        "format" : "",
-        "on-click" : "swaync-client -t",
-        "menu": "on-click-right",
-        "menu-file": "~/.config/waybar/context/ctlcenter.xml",
-        "menu-actions": {
-            "action-1-1": "hyprctl eval \"hl.exec_cmd('alacritty -e htop')\"",
-            "action-1-2": "hyprctl eval \"hl.exec_cmd('alacritty -e nvtop')\"",
-            "action-1-3": "hyprctl eval \"hl.exec_cmd('alacritty -e pkexec powertop')\"",
-            "action-1-4": "hyprctl eval \"hl.exec_cmd('missioncenter' )\"",
-
-            "action-2-1": "hyprctl eval \"hl.exec_cmd('nwg-look')\"",
-            "action-2-2": "hyprctl eval \"hl.exec_cmd('qt6ct')\"",
-            "action-2-3": "hyprctl eval \"hl.exec_cmd('kvantummanager')\"",
-
-
-            "action-3-1": "~/.local/bin/refreshrate 60",
-            "action-3-2": "~/.local/bin/refreshrate 90",
-            "action-3-3": "~/.local/bin/refreshrate 144",
-
-            "action-4-1": "~/.local/bin/caffeine shutdown",
-            "action-4-2": "~/.local/bin/caffeine handle-lid-switch",
-
-            "action-5": "hyprctl reload"
-  		}
-    },
-
-    "custom/arrow-left":  { 
-        "format": "", 
-        "tooltip": false, 
+    "custom/arrow-left":  {
+        "format": "",
+        "tooltip": false,
         "cursor": true
     },
-    
-    "custom/arrow-right": { 
-        "format": "",  
+
+    "custom/arrow-right": {
+        "format": "",
         "tooltip": false,
         "cursor": true
     },
@@ -300,6 +261,8 @@
             "transition-left-to-right": true,
             "reveal-delay": 450
         },
-        "modules": ["backlight"]
+        "modules": [
+          "backlight"
+        ]
     }
 }
