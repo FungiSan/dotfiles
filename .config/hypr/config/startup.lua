@@ -27,6 +27,7 @@ local startup = {
 	"swaync",
 	"flameshot",
 	"/usr/lib/xfce-polkit/xfce-polkit", -- Policy manager (prompts for sudo access if app requests)
+	"/usr/lib/polkit-kde-authentication-agent-1",
 	"hypridle", -- "Idle daemon"
 	"mpris-proxy", -- mpris gateway for mpd
 }
