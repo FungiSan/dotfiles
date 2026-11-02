@@ -45,6 +45,9 @@ mkdir -p "$DEST"/.local/share
 cp "$SRC"/.local/share/applications/* "$DEST"/.local/share/applications
 cp "$SRC"/.local/share/templates/* "$DEST"/.local/share/templates
 
+mkdir -p ~/.config/alacritty/themes
+git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+
 for LOCAL_SHARE_PATH in "$SRC"/.local/share/*; do
     NAME=$(basename $LOCAL_SHARE_PATH)
 
