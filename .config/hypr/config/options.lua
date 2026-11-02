@@ -106,7 +106,7 @@ hl.config({
 		sensitivity = -0.6,
 		numlock_by_default = true,
 
-		scoroll_method = "on_button_down",
+		scroll_method = "on_button_down",
 
 		kb_layout = "us,ru",
 		kb_variant = "",
