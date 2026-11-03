@@ -31,13 +31,13 @@ hl.config({
 
 		-- specifies the scale factor of windows on the special workspace
 		-- AKA extra gaps for special workspaces
-		special_scale_factor = 0.95,
+		--special_scale_factor = 0.95,
 	},
 
 	master = {
 		new_on_top = true,
 		new_status = "master",
-		special_scale_factor = 0.95,
+		--special_scale_factor = 0.95,
 	},
 
 	scrolling = {
@@ -106,7 +106,9 @@ hl.config({
 		sensitivity = -0.6,
 		numlock_by_default = true,
 
-		-- scroll_method = "on_button_down",
+		scroll_method = "on_button_down",
+		scroll_factor = 0.5,
+		accel_profile = adaptive, -- Options: adaptive, flat, or custom
 
 		kb_layout = "us,ru",
 		kb_variant = "",

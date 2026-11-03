@@ -22,7 +22,8 @@ hl.window_rule({
 })
 
 -- Workspace rules
-hl.workspace_rule({ workspace = "special:magic", layout = "dwindle" })
+hl.workspace_rule({ workspace = "special:magic", layout = "dwindle", gaps_out = 60 })
+hl.workspace_rule({ workspace = "special:magic", layout = "master", gaps_out = 60 })
 
 -- Layer rules
 hl.layer_rule({
@@ -89,7 +90,7 @@ hl.window_rule({
 hl.window_rule({
 	match = {
 		class = "org.telegram.desktop",
-		title = "^Telegram.*",
+		--title = "^Telegram.*",
 	},
 
 	border_size = 1,
