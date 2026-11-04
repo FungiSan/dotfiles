@@ -107,7 +107,7 @@ hl.config({
 		numlock_by_default = true,
 
 		scroll_method = "on_button_down",
-		scroll_factor = 0.5,
+		scroll_factor = 1,
 		accel_profile = adaptive, -- Options: adaptive, flat, or custom
 
 		kb_layout = "us,ru",
